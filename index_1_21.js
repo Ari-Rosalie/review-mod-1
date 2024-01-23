@@ -7,17 +7,21 @@
 
 
 // Given ab array of numbers and a given target. return the target if it's in the array or undefined if it's not
-function findTarget(numbers,target) {
+function findTarget(array,target) {
     return numbers.includes(target) ? target : undefined;
 }
 
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
-
+function firstNumBiggerThan14(array) {
+    return array.find(number => number > 14);
+}
 
 
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
-
+function stringLengthgreaterthan4() {
+    return 
+}
 
 
 // Given an array of Objects and a target id return the first object that matches the id or undefined if no such object is found
