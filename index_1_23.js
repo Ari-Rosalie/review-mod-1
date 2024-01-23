@@ -1,6 +1,17 @@
 // 1.----------------------------------
 // Write a function that takes in a string and returns a new string with every word capitalized. Write your own examples to call the function with.
 
+    function capitalWords(string) {
+        let words = string.split(' ');
+        let capitalizedWords = [];
+        for (let i = 0; i < words.length; i++) {
+            let word = words[i];
+            let capitalWord = word[0].toUpperCase() + word.slice(1);
+            capitalizedWords.push(capitalWord);
+        }
+        return capitalizedWords.join(' ');
+    }
+
 
 
 
