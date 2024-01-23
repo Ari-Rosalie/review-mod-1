@@ -34,6 +34,30 @@ function stringLengthgreaterthan4() {
  eyeColor: "green"
 }
 */
+const objectsArray = [
+    { id: "Y42C_a", name: "Robert", occupation: "Chef", eyeColor: "green" },
+    { id: "X31B_b", name: "Alice", occupation: "Engineer", eyeColor: "blue" },
+    { id: "Z29D_c", name: "David", occupation: "Teacher", eyeColor: "brown" },
+    { id: "W18E_d", name: "Sarah", occupation: "Artist", eyeColor: "gray" },
+    { id: "V27F_e", name: "Michael", occupation: "Doctor", eyeColor: "hazel" },
+    { id: "U36G_f", name: "Emily", occupation: "Scientist", eyeColor: "amber" },
+    { id: "T45H_g", name: "James", occupation: "Musician", eyeColor: "blue" },
+    { id: "S54I_h", name: "Olivia", occupation: "Writer", eyeColor: "green" },
+    { id: "R63J_i", name: "Daniel", occupation: "Athlete", eyeColor: "brown" },
+    { id: "Q72K_j", name: "Sophia", occupation: "Designer", eyeColor: "gray" }
+  ];
+
+//   function findObjectById(array, targetId) {
+//     return array.find(obj => obj.id === targetId);
+//   }
+
+function findObjectByID(array, targetID) {
+    for(let obj of array ){
+        if(obj.id === targetID) {
+            return obj
+        }
+    }
+}
 
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
