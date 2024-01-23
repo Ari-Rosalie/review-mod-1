@@ -19,7 +19,7 @@ function firstNumBiggerThan14(array) {
 
 
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
-function stringLengthgreaterthan4() {
+function stringLengthgreaterthan4(array) {
     return array.find(str => str.length > 4);
 }
 
@@ -34,7 +34,7 @@ function stringLengthgreaterthan4() {
  eyeColor: "green"
 }
 */
-const objectsArray = [
+const persons = [
     { id: "Y42C_a", name: "Robert", occupation: "Chef", eyeColor: "green" },
     { id: "X31B_b", name: "Alice", occupation: "Engineer", eyeColor: "blue" },
     { id: "Z29D_c", name: "David", occupation: "Teacher", eyeColor: "brown" },
@@ -61,4 +61,17 @@ function findObjectByID(array, targetID) {
 
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
+// Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
 /*
+{name: "Robert"}
+*/
+
+function findTargetName(array, targetID) {
+    for(let obj of array ){
+        if(obj.id === targetID) {
+            return {"name": obj.name}
+        }
+    }
+}
+
+console.log(findTargetName(persons,"S54I_h"))
