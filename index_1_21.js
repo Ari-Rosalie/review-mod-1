@@ -20,7 +20,7 @@ function firstNumBiggerThan14(array) {
 
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
 function stringLengthgreaterthan4() {
-    return 
+    return array.find(str => str.length > 4);
 }
 
 
