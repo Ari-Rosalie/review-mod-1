@@ -49,6 +49,24 @@ const john = {
   // 3.----------------------------------
   // Write a function that takes an array of objects and a targetId and returns a formatted string. Each object in the array will have the same structure as the objects from the previous question plus an id. Use chatGPT to create an array of 10 such objects.
   
+  const persons = [
+    { id: "Tfjso_4M", firstName: "John", lastName: "Klaus", occupation: "Carpenter" },
+    { id: "UeHg2_9A", firstName: "Rebecca", lastName: "Cohen", occupation: "Teacher" },
+    { id: "LpQb5_2X", firstName: "David", lastName: "Smith", occupation: "Software Engineer" },
+    { id: "KoWd8_6P", firstName: "Emma", lastName: "Johnson", occupation: "Doctor" },
+    { id: "NrZm3_7B", firstName: "Michael", lastName: "Miller", occupation: "Graphic Designer" },
+    { id: "GfHn1_3Y", firstName: "Sophia", lastName: "Davis", occupation: "Chef" },
+    { id: "IaLr4_8Z", firstName: "Ethan", lastName: "Martinez", occupation: "Architect" },
+    { id: "PxVf6_5Q", firstName: "Olivia", lastName: "Brown", occupation: "Marketing Specialist" },
+    { id: "RgJh9_1U", firstName: "Daniel", lastName: "White", occupation: "Photographer" },
+    { id: "BbYk7_0O", firstName: "Ava", lastName: "Jones", occupation: "Electrician" }
+]
+function findID(array,targetID){
+    const person = array.find(personObj => personObj.id === targetID);
+    return `${person.firstName} ${person.lastName},${person.id}`
+}
+console.log(findID(persons,"GfHn1_3Y" ))
+
   /* Example Object
   {
     id: "Tfjso_4M"
