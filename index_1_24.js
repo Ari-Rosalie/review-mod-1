@@ -218,9 +218,14 @@ const dinos = [
 console.log(dinoKey())
   // ------------------------------------------------------
   // 2. Given a dinosaur object and an mya (Millions of years ago) value, return a boolean indicating whether it was alive during that time or not
+//FIZZBUZZ
+function isDinoAlive(dino,mya) {
+   if(dino.mya.length ===  1) {
+    return dino.mya[0] === mya || dino.mya[0] - 1 === mya
+   } else {
+    return (mya >= dino.mya[1] && mya <= dino.mya[0])
 
-function aliveMya(dino,mya) {
-    return dino.mya === mya ? true : false
+   }
 }
 
 
@@ -229,3 +234,31 @@ function aliveMya(dino,mya) {
   
   // ------------------------------------------------------
   // 3. Given an array of dinosaurs and a key return a new array where each dinosaur object is replaced with the corresponding value of a specified key within each object. If no key is given or a wrong key is given, return the dinosaurIds
+  function replaceKey(dinos,key) {
+    let arr = []
+    for( let i = 0; i < dinos.length; i++) {
+       let dino = dinos[i]
+       let value = dino[key] || dino.dinosaurId
+       arr.push(value)
+    }
+    return arr
+
+
+  }
+
+
+  function replaceKey(dinos,key) {
+    let arr = []
+    for( let dino of dinosuars) {
+       let value = dino[key] || dino.dinosaurId
+       arr.push(value)
+    }
+    return arr
+
+
+  }
+
+  function replaceKey(dinos,key){
+  return dinosuars.map((dino) => dino[key] || dino.dinosaurId)
+  }
+
