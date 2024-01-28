@@ -25,10 +25,30 @@ function getLength(arr) {
 }
 
 //Dante
+function getStringLength() {
+    const stringLength = arr.map((el) => el.length);
+    return stringLengths
 
-const stringLength = arr.map((el) => )
+}
 
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
+
+// function getLengthLongerthan5(arr) {
+//     const five = []
+//     for (let str of arr) {
+//         if (str.length > 5) {
+//             five.push(str);
+//           }
+//         }
+//         return five;
+//     }
+
+    function getLengthLongerthan5(arr) {
+        return arr.filter(str => str.length > 5)
+    }
+
+    console.log(getLengthLongerthan5(["hello","United States", "Rodgriguez", "collado", "cat","house","ari", "dante"]))
+
 
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
 
