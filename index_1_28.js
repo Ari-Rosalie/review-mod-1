@@ -78,15 +78,24 @@ console.log(getLength(["hello","United States", "Rodgriguez", "collado", "cat","
 
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
 
-function getSum(arr) {
-    let sum = 0
-    for (let num of arr) {
-        if (num % 2 === 0) {
-            sum += num
-        }
-    }
+// function getSum(arr) {
+//     let sum = 0
+//     for (let num of arr) {
+//         if (num % 2 === 0) {
+//             sum += num
+//         }
+//     }
 
-    return sum
+//     return sum
+// }
+
+function getSum(arr) {
+    return arr.reduce((sum, num) => {
+        if (num % 2 === 0) {
+            return sum + num;
+        }
+        return sum;
+    }, 0);
 }
 
 console.log(getSum([1,2,3,4,5,6,7,8,9]))
