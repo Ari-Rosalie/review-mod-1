@@ -155,7 +155,10 @@ const companyOrganizationalStructure = {
   };
   
   // YOUR CODE HERE
-  
+  console.log(companyOrganizationalStructure.departments.development.head.office.employees.softwareEngineer2.desk)
+  console.log(companyOrganizationalStructure.departments.marketing.head.office.location)
+  console.log(companyOrganizationalStructure.CEO.office.employees.executiveAssistant.name)
+  console.log(companyOrganizationalStructure.
   // ------------------------------------------------------------------------
   
   // 5. Given the following variables, create a new object. the key variable should be the key and the value variable should be it's corresponding value. You have to use the variables!
