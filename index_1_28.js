@@ -52,6 +52,30 @@ function getStringLength() {
 
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
 
+// function getLength(arr){
+//     const longerThan5 = []
+//     for(const str of arr) {
+//         if(str.length > 5) {
+//             longerThan5.push(str.length)
+//         }
+//     }
+//     return longerThan5
+// }
+
+function getLength(arr) {
+    const result = arr.reduce((longerThan5,str) => {
+        if( str.length > 5) {
+            longerThan5.push(str.length)
+        }
+        return longerThan5;
+    }, [])
+    return result
+}
+console.log(getLength(["hello","United States", "Rodgriguez", "collado", "cat","house","ari", "dante"]))
+
+
+
+
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
 
 // 5. Write a function that takes an array of numbers and returns the min num
